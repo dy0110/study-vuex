@@ -5,11 +5,14 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
-    data() {
-        return {
-            title: "感想を入力"
-        }
-    },    
+   computed:{
+       ...mapGetters({
+           // titleに指定のゲッターの返り値をセット
+           title: 'getTitle'
+       })
+   }
 }
 </script>

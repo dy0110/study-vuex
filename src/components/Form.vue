@@ -2,8 +2,9 @@
   <div>
     Formページ
     <head-comp></head-comp>
-    <textarea-comp></textarea-comp>
-    <string-comp></string-comp>
+    <!-- <textarea-comp :is="isComponent"></textarea-comp>
+    <string-comp :is="isComponent"></string-comp> -->
+     <component :is="isComponent"></component>
     <button @click="buttonAction">{{button}}</button>
   </div>
 </template>
@@ -21,13 +22,19 @@ export default {
       TextareaComp,
       StringComp
   },
-  data() {
-      return {
-           button: '確認'
-      }
-  },
   methods: {
-    
+    ...mapActions({
+        // buttonActionオブジェクトにstoreのbuttonActionをマップ
+        buttonAction: 'buttonAction'
+      })
+  },
+  computed: {
+    ...mapGetters({
+      // buttonオブジェクトにgetButtonの返り値をマップ
+      button: "getButton",
+       // isComponentオブジェクトにgetComponentの返り値をマップ
+      isComponent:  'getComponent'
+    })
   }
 };
 </script>
