@@ -174,6 +174,6 @@ getters ブロック内に記述
 ```
 
 ### 参考
-[Vuex公式](https://vuex.vuejs.org/ja/)
-[vue.js＋Vuexチュートリアル](https://qiita.com/_P0cChi_/items/ebf8fbf035b36218a37e)
-[https://qiita.com/Statham/items/046649bff81c00ba275e](https://qiita.com/Statham/items/046649bff81c00ba275e)
+[Vuex公式](https://vuex.vuejs.org/ja/)  
+[vue.js＋Vuexチュートリアル](https://qiita.com/_P0cChi_/items/ebf8fbf035b36218a37e)  
+[Vuex: mapStateの使い方を理解する](https://qiita.com/Statham/items/046649bff81c00ba275e)  
